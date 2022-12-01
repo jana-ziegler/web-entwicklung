@@ -5,54 +5,75 @@
     <title>ToDo-Liste</title>
     <link href="https://unpkg.com/bootstrap@5.2.2/dist/css/bootstrap.min.css"
           rel="stylesheet" />
-    <div class="text-bg-light p-5">
-        <h2 style="text-align: center">Aufgabenplaner: ToDos (Aktuelles Projekt)</h2>
-    </div>
+
 </head>
 <body>
-<div class="container-fluid" style="margin-top: 20px">
-    <div class="row">
-        <div class="col-2">
-            <ul class="list-group">
-                <li class="list-group-item" style="color: cornflowerblue">Login</li>
-                <li class="list-group-item" style="color: cornflowerblue">Projekte</li>
-                <li class="list-group-item" style="color: cornflowerblue">Aktuelles Projekt</li>
-                <li class="list-group-item" style="color: cornflowerblue; margin-left: 40px">Reiter</li>
-                <li class="list-group-item" style="color: cornflowerblue; margin-left: 40px">Aufgaben</li>
-                <li class="list-group-item" style="color: cornflowerblue; margin-left: 40px">Mitglieder</li>
-            </ul>
+
+<div class="container">
+    <div class="container-fluid">
+        <div class="card text-center border-0 mb-3">
+            <div class="text-bg-light p-5">
+                <h2><!--style="text-align: center"-->Aufgabenplaner: ToDos (Aktuelles Projekt)</h2>
+            </div>
         </div>
-        <div class="col">
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header">ToDo:</div>
-                        <ul class="list-group">
-                            <li class="list-group-item">Vorlesung besuchen</li>
-                            <li class="list-group-item">Essen kochen</li>
-                        </ul>
+        <div class="row">
+            <div class="col-2">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="login.html" class="text-primary text-decoration-none">Login</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="projekte.html" class="text-primary text-decoration-none">Projekte</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="index.html" class="text-primary text-decoration-none">
+                            Aktuelles Projekt
+                        </a>
+                    </li>
+                    <li class="list-group-item text-primary ms-4">
+                        <a href="reiter.html" class="text-primary text-decoration-none">Reiter</a>
+                    </li>
+                    <li class="list-group-item text-primary ms-4">
+                        <a href="aufgaben.html" class="text-primary text-decoration-none">Aufgaben</a>
+                    </li>
+                    <li class="list-group-item text-primary ms-4">
+                        <a href="mitglieder.html" class="text-primary text-decoration-none">Mitglieder</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header">ToDo:</div>
+                            <ul class="list-group" >
+                                <li class="list-group-item list-group-flush">Vorlesung besuchen</li>
+                                <li class="list-group-item">Essen kochen</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header">Erledigt:</div>
-                        <ul class="list-group">
-                            <li class="list-group-item">Einkaufen gehen</li>
-                            <li class="list-group-item">Webentwicklung Übung</li>
-                        </ul>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header">Erledigt:</div>
+                            <ul class="list-group">
+                                <li class="list-group-item">Einkaufen gehen</li>
+                                <li class="list-group-item">Webentwicklung Übung</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header">Verschoben:</div>
-                        <ul class="list-group">
-                            <!-- nichts verschoben -->
-                        </ul>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header">Verschoben:</div>
+                            <ul class="list-group">
+                                <!-- nichts verschoben -->
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 </body>
 </html>
